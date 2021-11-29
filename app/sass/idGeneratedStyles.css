@@ -1,0 +1,160 @@
+
+div.Basic-Text-Frame {
+	border-style:solid;
+}
+table.Basic-Table {
+	border-collapse:collapse;
+	margin-bottom:-4px;
+	margin-top:4px;
+}
+td.Basic-Table {
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	vertical-align:top;
+}
+p.Basic-Paragraph {
+	color:#000000;
+	font-family:"Open Sans", serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+td.CellOverride-1 {
+	border-bottom-width:1px;
+	border-right-style:solid;
+	border-right-width:1px;
+	vertical-align:middle;
+}
+td.CellOverride-2 {
+	background-color:#a0c03b;
+	border-bottom-color:#a0c03b;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:#ffffff;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:#ffffff;
+	border-top-style:solid;
+	border-top-width:1px;
+	vertical-align:middle;
+}
+td.CellOverride-3 {
+	background-color:#a0c03b;
+	border-bottom-color:#ffffff;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:#ffffff;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:#ffffff;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:#ffffff;
+	border-top-style:solid;
+	border-top-width:1px;
+	vertical-align:middle;
+}
+td.CellOverride-4 {
+	background-color:#a0c03b;
+	border-bottom-color:#ffffff;
+	border-bottom-width:1px;
+	border-left-color:#ffffff;
+	border-left-width:1px;
+	border-right-color:#a0c03b;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-width:1px;
+	vertical-align:middle;
+}
+td.CellOverride-5 {
+	border-bottom-color:#a0c03b;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:#a0c03b;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:#a0c03b;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:#a0c03b;
+	border-top-style:solid;
+	border-top-width:1px;
+	vertical-align:middle;
+}
+td.CellOverride-6 {
+	background-color:#a0c03b;
+	border-bottom-color:#ffffff;
+	border-bottom-width:1px;
+	border-left-color:#ffffff;
+	border-left-width:1px;
+	border-right-color:#a0c03b;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:#ffffff;
+	border-top-width:1px;
+	vertical-align:middle;
+}
+p.ParaOverride-1 {
+	text-align:center;
+}
+span.CharOverride-1 {
+	font-family:"Open Sans", sans-serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.CharOverride-2 {
+	color:#ffffff;
+	font-family:"Open Sans", sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-3 {
+	color:#ffffff;
+	font-family:"Open Sans", sans-serif;
+	font-style:normal;
+	font-weight:bold;
+}
+span.CharOverride-4 {
+	font-family:"Open Sans", sans-serif;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+col._idGenTableRowColumn-1 {
+	width:88px;
+}
+col._idGenTableRowColumn-2 {
+	width:141px;
+}
+col._idGenTableRowColumn-3 {
+	width:148px;
+}
+col._idGenTableRowColumn-4 {
+	width:142px;
+}
+tr._idGenTableRowColumn-5 {
+	min-height:28px;
+}
+tr._idGenTableRowColumn-6 {
+	min-height:27px;
+}

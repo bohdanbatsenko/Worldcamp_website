@@ -1,0 +1,569 @@
+@import "vars.sass"
+
+.s-leaders-intro-logo
+	padding: 30px 25px
+	@media only screen and (min-width : 768px)
+		display: none
+	img
+		width: 350px
+		margin: 0 auto
+		@media only screen and (max-width : 950px)
+			width: 200px
+
+.s-leaders-carousel
+	position: relative
+	margin-bottom: 35px
+	.carousel-leaders
+		position: relative
+		@media only screen and (max-width : 768px)
+			display: none		
+		.slider
+			position: relative
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-content: center
+			text-align: center
+			height: 472px
+			background-position: center center
+			background-size: cover
+			background-repeat: no-repeat
+			backface-visibility: hidden
+	.leaders-teaser-wrapper
+		z-index: 99
+		display: flex
+		background: linear-gradient(to top, #000, rgba(255,255,255,.0))				
+		flex-wrap: wrap
+		@media only screen and (min-width : 768px)
+			position: absolute
+			width: 100%
+			height: 90px
+			left: 0
+			bottom: 0
+			padding: 5px 55px
+		@media only screen and (max-width : 768px)
+			position: relative
+			flex-direction: column
+			height: 100%		
+		.teaser-item
+			flex: 1 1 20%
+			text-align: center
+			font-family: $default-font-light
+			color: #fff
+			display: flex
+			justify-content: center
+			line-height: 18px
+			@media only screen and (max-width : 768px)
+				margin-bottom: 20px
+			.number
+				//flex: 50%
+				font-family: $default-font-bold
+				justify-content: center
+				font-size: 40px
+				margin-right: 15px
+				text-shadow: 1px 1px 2px #000
+			.descr
+				//flex: 50%
+				font-family: $default-font-medium
+				justify-content: center
+				text-shadow: 1px 1px 2px #000
+	.owl-nav
+		position: absolute
+		top: 50%
+		width: 100%
+		>	div
+			width: 64px
+			height: 64px
+			background-color: #fff
+			color: $main-color
+			position: absolute
+			text-align: center
+			line-height: 64px
+			font-size: 36px
+			&.owl-prev
+				left: 0
+				transition: all .25s ease-in-out
+				&:hover
+					opacity: .5
+			&.owl-next
+				right: 0
+				transition: all .25s ease-in-out
+				&:hover
+					opacity: .5
+	.owl-dots
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			width: 24px
+			height: 24px 
+			margin: 0 2px
+			border-radius: 10em
+			background-color: #ddd
+			cursor: pointer
+			transition: background-color .25s ease
+			&.active
+				background-color: lightblue
+
+
+// .main-head
+// 	height: auto!important
+// .header-wrap-leaders
+// 	margin-top: 0
+// 	position: relative
+// 	padding-bottom: 90px
+// 	text-align: center
+// 	display: flex
+// 	flex-direction: column
+// 	justify-content: flex-end
+// 	width: 100%
+// 	&:before
+// 		content: ''
+// 		left: 0
+// 		top: 0
+// 		display: block
+// 		width: 100%
+// 		height: 100%
+// 		background: url(../img/leaders/leaders_bg.jpg)
+// 		background-repeat: no-repeat
+// 		background-size: cover!important
+// 		background-position: bottom center	
+// 		position: absolute
+// 		z-index: -1
+// 	.header-wrap-leaders-bg
+// 		&:after
+// 			content: ''
+// 			display: block
+// 			position: absolute
+// 			top: 0
+// 			left: 0
+// 			width: 100%
+// 			height: 100%
+// 			background: rgba(#000, .5)
+// 			z-index: 0	
+// 	.header-wrap-title-leaders
+// 		margin-top: 8%
+// 		h1
+// 			display: inline-block
+// 			font-family: $titles-font-regular
+// 			padding: 10px 30px
+// 			color: #fff
+// 			border: 8px solid #fff
+// 			box-shadow: inset 200px 200px rgba($brand-worldcamp-title,0.5)
+// 			text-transform: uppercase
+// 			overflow:hidden
+// 		p
+// 			margin: 0 auto
+// 			width: 440px	
+// 			color: #fff
+// 			margin-top: 0
+// 			font-size: 22px
+// 			overflow: hidden
+// 	.arrow-wrap
+// 		top: 10px
+// 		.bg 
+// 			background: #fff
+// 		.button-down
+// 			background: #fff
+// 			&:hover
+// 				background: lighten($accent-color, 20%)	
+// 				.fa
+// 					color: #fff
+// 			.fa
+// 				color: $accent-color
+
+.s-register
+	text-align: center
+.s-workshop
+	.v-item-icon,
+	.v-item-content
+		display: block	
+		vertical-align: middle
+	.v-item-wrap
+		font-family: $default-font-light
+		color: #666
+		padding: 20px 0
+		.fa
+			font-size: 42px
+			color: #666
+			line-height: 45px
+			margin-right: 13px
+		.v-item-content
+			text-align: center
+			line-height: 1.5
+			span
+				display: block
+				font-size: 16px
+				font-family: $default-font-regular
+				color: lighten(#000, 20%)
+				&:first-child
+					font-family: $default-font-italic				
+			strong
+				display: block
+				font-size: 18px
+				font-family: $default-font-regular
+				color: lighten(#000, 20%)
+.s-leaders-venu
+	margin: 0 auto
+	padding: 30px 20px
+	.v-item-wrap
+		margin-bottom: 35px
+		.v-item-icon
+			margin-bottom: 14px
+			.fa
+				font-size: 39px
+				color: $brand-worldcamp-title				
+		.v-item-content
+			span
+				font-size: 16px
+
+			.fee-wrap
+				margin-top: 15px
+				display: flex
+				flex-direction: row
+				flex-wrap: no-wrap
+				justify-content: top
+				.fee
+					flex: 1 1 60px
+					display: inline-block
+					margin-right: 15px
+					line-height: 16px
+					align-content: center
+					text-align: right
+				span
+					flex: 1 1 130px
+					text-align: left
+
+.workshop_content_box
+	position: relative
+	background-color: #fff
+	max-width: 780px
+	padding: 20px
+	margin: auto
+	text-align: left
+	.mfp-close
+		position: absolute
+		top: 0
+		right: 0
+	img
+		display: inline-block
+		width: 80px
+		float: left
+		margin-right: 30px
+	p
+		font-family: $default-font-light
+		color: #666
+		text-align: left
+		font-size: 17px
+	table
+		font-size: 17px
+		tr
+			vertical-align: top
+	ul.workshop-list
+		list-style-type: none
+		margin-left: 0
+		text-align: left
+		li
+			list-style-type: none
+			.fa
+				display: inline-block
+				color: $accent-color
+				margin-right: 10px
+
+.s-leaders-intro
+	padding: 40px 20px
+	background-color: #ededed
+	.leaders-intro-logo
+		display: inline-block
+		margin: 0 auto
+		background-position: center center
+		background-size: contain
+		background-repeat: no-repeat
+		width: 240px
+		height: 0
+		padding-bottom: 60%
+
+	.leaders-intro-descr
+		p
+			font-size: 18px
+			font-family: $default-font-bold
+		p:first-child:first-letter
+			color: $brand-worldcamp-title
+			float: left
+			font-size: 75px
+			line-height: 60px
+			padding-top: 4px
+			padding-right: 8px
+			padding-left: 3px	
+
+
+.s-leaders-gallery
+	.container-gallery
+		margin: 0 auto
+		//max-width: 1200px
+		//padding: 0 1rem
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media screen and (min-width: 600px)
+			.grid
+				display: flex
+				flex-wrap: wrap
+				flex-direction: row
+				.cell
+					width: 50%
+		@media screen and (min-width: 1000px)
+			.cell
+				flex: 1 1 250px
+				//width: calc(100% / 4)
+				//flex: 0 1 100px			
+
+		img
+			display: block
+		.responsive-image
+			max-width: 100%
+
+
+
+
+.s-leaders-reviews
+	padding: 20px 0 40px
+	text-align: center
+	background-color: #23335e
+	.reviews-title
+		text-transform: uppercase
+		font-family: $default-font-bold
+		font-size: 55px
+		color: #fff
+		@media only screen and (max-width: 50rem)
+			font-size: 35px
+	.leaders-review-item
+		.leaders-r-text
+			color: #fff
+			text-align: left
+			font-family: $default-font-italic
+			margin-bottom: 25px
+		.leaders-r-photo
+			display: block
+			margin: 0 auto
+			margin-bottom: 25px
+			max-width: 100%
+			width: 120px
+			height: 120px
+			//padding-bottom: 20em
+			background-size: cover
+			background-position: center center
+			background-repeat: no-repeat
+			border-radius: 50%
+			&.nastia
+				background-position: top center
+		.leaders-r-name
+			font-family: $default-font-bold
+			font-size: 18px
+			color: #fff
+			text-transform: uppercase
+		.leaders-r-position
+			color: #fff
+			margin-bottom: 25px
+
+.s-form
+	.forms
+		width: 400px
+		background-color: rgba(#000, .2)
+		padding: 35px 35px 30px
+		color: #000
+		font-size: 14px
+		border-bottom: #1A222B 4px solid
+		h4
+			color: #000
+			font-family: $default-font-medium
+			text-transform: uppercase
+			font-size: 30px
+			margin: 0
+		p
+			line-height: em(23px)
+			margin-top: 10px
+		label
+			margin-top: 20px
+			margin-bottom: 15px
+			display: block
+			span
+				letter-spacing: 1.5px
+				display: block
+				margin-bottom: 6px
+				color: #778390
+		input
+			display: block
+			width: 100%
+			border: none
+			box-shadow: 0 -3px rgba(#000,.4)
+			background-color: rgba(#000,.2)
+			text-indent: 10px
+			padding: 10px 0
+			transition: all .5s ease
+			color: #fff
+			font-family: $default-font-medium
+			font-size: em(20px)
+			&:focus
+				box-shadow: 0 -5px rgba(#000,.3)
+				background-color: rgba(#000,.3)
+		.buttons
+			margin-top: 15px
+
+.button-wrap
+	text-align: center
+
+.buttons
+	display: inline-block
+	border: none
+	background-color: $yellow-color
+	color: #111
+	font-family: $default-font-medium
+	font-size: 22px
+	padding: 12px 30px
+	border-bottom: #B97200 3px solid
+	transition: all .25s ease
+	text-decoration: none
+	border-radius: 2px
+	&:hover
+		background-color: #FFB338
+		text-decoration: none
+		color: #111
+	&:active
+		background-color: #DB8C0E
+		text-decoration: none
+		color: #111
+	&:focus
+		color: #111
+		text-decoration: none	
+
+.mfp-forms
+	.forms
+		background-color: rgba(36, 51, 67, 1)
+		box-shadow: 0 0 18px rgba(0,0,0,.5), 0 0 0 5px #243343
+		border: none
+		border-radius: 1px
+	&.mfp-wrap
+		&.mfp-ready
+			opacity: 1
+	.mfp-close
+		color: #fff
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.25s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+
+.s-leaders-speakers
+	background-color: lightblue
+	text-align: center
+	h1.leaders-sp-title
+		font-family: $default-font-bold
+		font-size: 72px
+		text-transform: uppercase
+		@media only screen and (max-width: 50rem)
+			font-size: 40px
+	.leaders-sp-wrapper
+		text-align: center
+		//display: flex
+		//flex-wrap: wrap
+		//justify-content: center
+		.leaders-sp-item
+			display: inline-block
+			width: 100%
+			height: 530px
+			padding-bottom: 100%
+			background-size: 90%
+			background-position: center center
+			background-repeat: no-repeat
+
+
+.s-straus
+	display: flex
+	@media screen and (min-width: 60rem)
+		flex-direction: row
+		&:after
+			content: ''
+			display: block
+			flex: 1 1 40%
+			background: url(../img/leaders/straus2.jpg)
+			background-size: cover
+			background-position: center center
+	@media screen and (max-width: 60rem)
+		flex-direction: column
+		&:after
+			flex: 1 1 100%
+		.s-straus-text
+			flex: 1 1 100%
+	.s-straus-text
+		flex: 1 1 75%
+		padding: 40px 30px 40px 60px
+		font-size: 16px
+		h1
+			font-family: $default-font-regular
+			text-transform: uppercase
+			font-size: 32px
+			@media screen and (min-width: 60rem)
+				font-size: 40px
+	.s-straus-img
+		float: right
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		width: 100%
+		height: 100%
+		//max-width: 50%
+		//height: 0
+		//padding: 30%
+
+
+.s-surfer
+	display: flex
+	@media screen and (min-width: 60rem)
+		flex-direction: row
+		&:before
+			content: ''
+			display: block
+			flex: 1 1 40%
+			background: url(../img/leaders/surfer/surfer2.jpg)
+			background-size: cover
+			background-position: center center
+	@media screen and (max-width: 60rem)
+		flex-direction: column
+		&:before
+			flex: 1 1 100%
+		.s-surfer-text
+			flex: 1 1 100%
+	.s-surfer-text
+		flex: 1 1 75%
+		padding: 40px 30px 40px 60px
+		font-size: 16px
+		h1
+			font-family: $default-font-regular
+			text-transform: uppercase
+			font-size: 32px
+			@media screen and (min-width: 60rem)
+				font-size: 40px
+	.s-surfer-img
+		float: right
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		width: 100%
+		height: 100%
+		//max-width: 50%
+		//height: 0
+		//padding: 30%

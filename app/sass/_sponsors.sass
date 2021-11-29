@@ -1,0 +1,689 @@
+@import "vars.sass"
+
+// main-head title sponsors.html
+.main-head
+	height: auto!important
+.header-wrap-sponsors
+	margin-top: 0
+	position: relative
+	padding-bottom: 90px
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	width: 100%
+	&:before
+		content: ''
+		left: 0
+		top: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: url(../img/sponsors/bg_sponsors.jpg)
+		background-repeat: no-repeat
+		background-size: cover!important
+		background-position: center center	
+		position: absolute
+		z-index: -1
+		//filter: blur(5px)
+	.header-wrap-sponsors-bg
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba($accent, .5)
+			z-index: 0	
+	.header-wrap-title-sponsors
+		margin-top: 8%
+		//max-height: 100%
+		margin-bottom: 30px
+		h1
+			display: inline-block
+			font-family: $titles-font-regular
+			padding: 10px 30px
+			color: #fff
+			border: 8px solid #fff
+			box-shadow: inset 200px 200px rgba($brand-worldcamp-title,0.5)
+			text-transform: uppercase
+			overflow: hidden
+		h2
+			font-family: $default-font-medium
+			margin: 0 auto
+			width: 440px	
+			color: #fff
+			margin-top: 0
+			font-size: 28px
+			padding: 8px
+			box-shadow: inset 220px 220px rgba($brand-worldcamp-title,0.5)
+			overflow: hidden
+	.arrow-wrap
+		.bg 
+			background: #fff
+		.button-down
+			background: #fff
+			&:hover
+				background: lighten($accent-color, 20%)	
+				.fa
+					color: #fff
+			.fa
+				color: $accent-color
+
+.sponsors-reveal
+	.sponsors-intro
+		span
+			color: $brand-worldcamp-title
+
+//uyfintro about.html
+.s-sponsorsintro
+	//background-color: #efef
+	padding: 0
+	margin: 0
+	position: relative
+	.container-fluid
+		margin: 0
+		padding: 0
+		.col-md-6, .col-sm-12
+			padding: 0
+			margin: 0	
+			.s-sponsorsintro-content
+				padding: 30px 30px 2px 25px
+				text-align: left
+				position: relative
+				.text-content
+					margin-left: 30px	
+					p
+						span
+							font-family: $default-font-medium, sans-serif
+							//font-weight: 900
+							font-size: em(20px)
+							color: $accent-color
+						em
+							font-family: $default-font-medium, sans-serif
+							text-transform: uppercase
+							font-size: em(18px)
+							color: darken($yellow-color, 25%)
+			
+
+
+//section sponsors
+.sponsors-reveal	
+	padding-top: 25px
+	font-size: 22px
+	.headers
+		width: 100%
+		padding: 35px 0
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		//flex-wrap: wrap
+		margin: auto 0
+		border-bottom: lighten($accent-color, 5%) 1px solid
+		border-top: lighten($accent-color, 5%) 1px solid
+		background: lighten($accent, 45%)
+		position: relative
+		&-content
+			position: relative
+			z-index: 1
+		// &::before
+		// 	content: ''
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 0	
+		// 	bottom: 0
+		// 	right: 	0
+		// 	background-image: url(../img/sponsors/pict/photowall2_cropped.jpg)
+		// 	background-repeat: no-repeat
+		// 	background-size: cover
+		// 	background-position: center center				
+		// 	opacity: .5
+		h2
+			color: $accent
+			text-align: center
+			text-transform: uppercase
+			font-family: $default-font-regular
+			font-size: 29px
+			//flex: 1 1 auto
+			//justify-content: center
+			//align-items: center
+			//align-content: center
+		p
+			display: inline-block
+			width: 80%
+			margin: 0 auto
+			padding: 10px 15px
+			background-color: #fff
+			border: $accent 1px solid
+			font-size: 20px
+			text-transform: uppercase
+		span.sponsor-contact
+			text-transform: none
+	.sponsors-wrap
+		//background-image: url(/img/sponsors/hexagonal.jpg)
+		//background-repeat: no-repeat
+		//background-size: cover
+		//background-position: center center	
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0	
+			bottom: 0
+			right: 	0
+			background: linear-gradient(to bottom, rgba(241,198,235,0.8), rgba(255,255,255,0.5)), url(img/sponsors/hexagonal.jpg) center center 
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: top center				
+			//z-index: 0
+			opacity: .5		
+		.title-wrap
+			position: relative
+			margin-top: 50px
+			padding: 20px 0
+			.title-icon-wrap
+				position: relative
+				h2
+					font-family: $titles-font-light, sans-serif
+					margin-left: 80px
+					font-size: em(30px)
+					color: $main-color
+					&::before
+						content: ""
+						position: absolute
+						//display: inline-block
+						width: 50px
+						height: 50px
+						top: 0
+						left: 0
+						background-image: url(/img/sponsors/icons/icon-partner2.svg)
+						background-repeat: no-repeat
+						background-size: cover
+						background-position: 20px 30px 0
+
+	.ephemeral-wrap
+		position: relative
+		max-width: 100%
+		.slider-nav-container
+			//position: relative
+			margin: 10px 0
+			width: 100%
+			z-index: 2
+			@media screen and (max-width: 992px)
+				display: none
+			.slider-nav
+				position: relative
+				color: $accent
+				font-size: 36px
+				cursor: pointer
+				.next
+					position: absolute
+					display: block
+					top: 65px
+					right: 0
+				.prev
+					position: absolute
+					top: 65px
+					left: 0
+				.fa
+					display: block
+					width: 38px
+					text-align: center
+					margin: 0 5px
+					padding: 2px 4px
+					border: 1px solid $accent
+					border-radius: 3px
+					transition: all .3s ease-out
+					&:hover
+						background: $accent
+						color: #fff		
+
+
+		.persistent-selections
+			text-align: center
+			.options
+				@media screen and (min-width: 992px)
+					max-width: 85%
+					margin: 0 auto
+					float: none
+					padding: 0
+
+				li
+					display: inline-block
+					margin: 5px
+					border: $accent 1px solid 
+					border-radius: 2px
+					.item-wrap
+						position: relative
+						width: 180px
+						height: 150px
+						text-align: center
+						padding: 5px 8px
+						h2
+							font-family: $titles-font-regular, sans-serif
+							font-size: em(20px)
+							line-height: em(20px)
+							color: $accent
+							text-transform: uppercase
+							margin: 4px 0
+					a:active
+						background-color: $accent					
+					img
+						display: block
+						margin: 0 auto
+						width: 78px
+					.mc_toggle
+						text-align: center
+						background-color: lighten($accent, 15%)
+						position: relative
+						height: 25px
+						cursor: pointer
+						background-image: url(../img/sponsors/icons/mc_arrows_vert.png)
+						background-repeat: no-repeat
+						background-position: center center
+						transition: all .3s ease-out
+						&:active
+							background-color: $main-color
+						&:hover,
+						&:visited
+							cursor: pointer
+							background-color: $accent
+							background-position: bottom center
+						&:focus
+							transform: translateY(50%)
+
+
+		#ephemeral
+			margin-bottom: 60px
+			.single-tab
+				max-width: 100%
+				font-family: $default-font-regular, sans-serif
+				line-height: 21px
+				margin: 15px auto 0
+				background: rgba(255,255,255,.6)
+				padding: .7em 1em .5em
+				position: relative
+				padding: 2.75em 2.75em 2.375em
+				.reveal-super
+					background: #fff
+					padding: 15px 
+					position: absolute
+					top: 0
+					right: 4.3em
+					font-family: $titles-font-light, sans-serif
+					font-size: em(20px)
+					text-transform: uppercase
+					color: $accent
+				.reveal-header
+					font-family: $titles-font-light, sans-serif
+					font-size: em(20px)
+					text-transform: uppercase
+					color: $accent	
+				.reveal-body
+					font-size: em(18px)
+					line-height: 26px
+					ul.ul-mass-media
+						list-style-type: none
+					.fa
+						display: inline-block
+						margin-right: 10px
+						color: $accent-color
+					ul.ul-food
+						list-style-type: none
+						li
+							display: inline-block
+							margin-right: 20px
+							img
+								max-width: 100%
+							&:first-child
+								width: 180px
+							&:nth-child(2)
+								width: 100px
+							&:nth-child(3)
+								width: 120px
+							&:last-child
+								width: 120px																	
+							//&:nth-child(3)
+							//	width: 70px
+							//&:nth-child(4)
+							//	width: 60px
+					ul.ul-hostels
+						list-style-type: none
+						li
+							display: inline-block
+							margin-right: 20px
+							img
+								max-width: 100%
+								width: 100px
+							&:nth-child(3)
+								width: 70px
+							&:nth-child(4)
+								width: 60px		
+					ul.ul-sound
+						list-style-type: none
+					.fa
+						display: inline-block
+						margin-right: 10px
+						color: $accent-color	
+					ul.ul-list-media
+						list-style-type: none
+						li
+							display: block
+							margin-right: 20px
+					.fa
+						display: inline-block
+						margin-right: 10px
+						color: $accent-color
+					ul.ul-list-flyers
+						list-style-type: none
+						li
+							display: block
+							margin-right: 20px
+					.fa
+						display: inline-block
+						margin-right: 10px
+						color: $accent-color
+					ul.ul-list-advertising
+						list-style-type: none
+						li
+							display: block
+							margin-right: 20px
+					.fa
+						display: inline-block
+						margin-right: 10px
+						color: $accent-color
+				.images-wrap
+					max-width: 450px
+					//position: relative
+					display: flex
+					flex-wrap: wrap
+					//max-width: 100%
+					margin: 10px auto
+					justify-content: space-around
+					//align-items: stretch
+					//align-content: stretch
+					//flex-flow: row wrap					
+					img
+						display: block
+						position: relative
+						max-width: 100%
+						height: auto
+						border: none
+						margin: 0 10px
+						//clip-path: polygon(6% 1%, 94% 0, 100% 6%, 100% 94%, 94% 100%, 6% 100%, 0 94%, 0 6%)
+						transition: all .2s ease-in-out
+						opacity: .8
+						overflow: hidden
+						&:hover
+							transform: scale(1.25)
+							opacity: 1
+					.bl
+						display: inline-block
+						margin: 5px 0
+						width: calc(50% - 4px)
+						overflow: hidden
+					.fl1
+						flex: 1 1 150px	
+					.fl2
+						flex: 1 1 150px	
+					.fl3
+						flex: 1 1 150px								
+					.fl4
+						flex: 1 1 250px	
+						height: 280px
+					.fl5
+						flex: 1 1 250px
+
+					.img-top-left
+						//margin-right: 0
+					.img-top-right
+						//margin-left: 0
+					.img-bottom-left
+						//margin-right: 0
+					.img-bottom-right
+						//margin-left: 0
+			.ul-media-wrap
+				display: inline-block
+				ul.ul-media
+					list-style-type: none
+					li
+						display: inline-block
+						margin-right: 20px
+						img
+							max-width: 100%
+							width: 90px
+						img.wide							
+							width: 180px
+			.close-ephemeral
+				float: right
+				margin-top: -2em
+				z-index: 2
+				a:link,
+				a:visited
+					//font-family:
+					text-transform: uppercase
+					font-size: .875em
+					color: $main-color
+					text-decoration: none
+					padding: 10px 0 8px 35px
+					background:  url(../img/sponsors/icons/close.png) center left no-repeat
+				a:hover
+					text-decoration: underline
+
+
+// section callback
+.s-callback
+	h2
+		font-family: $titles-font-light, sans-serif
+	.item-vertical-2
+		margin-top: 55px
+		&:hover
+			.rounded-img-wrap
+				transform: scale(1.15)
+			.iv-phone
+				color: $accent
+		text-align: center
+		h3
+			font-size: em(17px)
+			font-family: $titles-font-bold, sans-serif
+			color: #444
+			margin-top: 40px
+			margin-bottom: 10px
+		p
+			font-size: em(13px)
+			color: #666
+			letter-spacing: 2px
+			margin-top: 0
+
+	.iv-phone
+		margin-top: 22px
+		color: #999
+		font-family: $titles-font-bold, sans-serif
+		font-size: em(17px)
+		transition: all .5s ease-in-out
+		i
+			font-size: 19px
+			margin-right: 3px
+	.rounded-img-wrap
+		border-radius: 10em
+		border: $accent 6px solid
+		overflow: hidden
+		width: 125px
+		height: 125px
+		text-align: center
+		margin: auto
+		transition: all .5s ease-in-out
+		img
+			max-width: 100%
+
+
+.partners-header
+	text-align: center
+	border-bottom: 1px solid $brand-worldcamp-title
+	padding: 5px 10px 25px
+	font-family: $default-font-light
+	color: $brand-worldcamp-title
+	font-size: 30px
+	text-transform: uppercase
+.support
+	.support-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		padding: 20px 0 0 0
+		text-align: center
+		overflow: hidden
+		.support-item
+			margin-right: 25px
+			width: 90px
+			padding: 5px
+			overflow: hidden
+			.knlu
+				width: 60px
+
+
+		// .support-item
+		// 	display: inline-block
+		// 	margin-right: 25px
+		// 	max-width: 100%
+		// 	width: 140px
+		// 	height: 0
+		// 	background-position: center center
+		// 	background-size: 80%
+		// 	background-repeat: no-repeat
+		// 	padding-bottom: 8%
+		// 	overflow: hidden
+		// 	&:last-child
+		// 		margin-right: 0
+
+
+
+
+
+//Section partners in sponsors.html
+.s-brands
+	padding: 60px 0
+	h2
+		margin-bottom: 60px
+
+.s-partners
+	.headers
+		margin-top: 0
+		padding: 10px 20px
+		width: 100%		
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		position: relative		
+		border-bottom: lighten($accent-color, 5%) 1px solid 
+		background: lighten($accent, 20%)
+		&-content
+			position: relative
+			z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0	
+			bottom: 0
+			right: 	0
+			background-image: url(img/partners/partners_header.png)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: top center				
+			z-index: 0
+			opacity: .6
+		h2
+			font-family: $default-font-regular
+			font-size: 40px
+			text-transform: uppercase
+			color: #fff
+			padding: 5px 0
+			display: inline-block
+			position: relative
+			// &:before,
+			// &:after
+			// 	content: ''
+			// 	display: block
+			// 	position: absolute
+			// 	top: 0
+			// 	width: 100%
+			// 	height: 25px
+			// 	background: #000
+			// &:before
+			// 	left: 0
+			// &:right
+			// 	right: 0
+.carousel-brands
+	padding: 5px 0 15px 0
+	position: relative
+	.owl-nav
+		left: 0
+		top: 50%
+		position: absolute
+		width: 100%
+		//top: 0
+		> div
+			position: absolute
+			left: 5px
+			font-size: 54px
+			line-height: 38px
+			color: #9c9c9c
+			transition: all .5s ease
+			&:hover
+				color: $accent-color
+			&.owl-next
+				right: -40px
+				left: auto
+			&.owl-prev
+				left: -40px
+				right: auto
+	.owl-dots
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			width: 21px
+			height: 21px 
+			margin: 0 4px
+			border-radius: 10em
+			background-color: #d5cea2
+			cursor: pointer
+			transition: all .25s ease
+			&.active
+				width: 27px
+				height: 27px
+				background-color: $brand-worldcamp-title			
+	.carousl-brand
+		//line-height: -20px
+		transition: all .5s ease
+		height: 180px
+		// position: relative
+		// display: flex
+		// align-items: center
+		// justify-content: center
+		&:hover
+			opacity: .9
+		a
+			//display: block
+			text-align: center
+		img
+			//max-width: 150px
+			display: inline-block
+			position: absolute
+			left: 0
+			right: 0
+			top: 50%
+			transform: translate3d(0,-50%,0)
+			margin: 0 auto
+			@media screen and (max-width: 768px)
+				width: 190px
+				height: auto

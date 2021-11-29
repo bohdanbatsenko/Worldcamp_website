@@ -1,0 +1,549 @@
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	width: 100%
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	z-index: 9999
+	.loader_inner
+		background-image: url(../img/preloader.gif)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+
+.headhesive
+	//padding-top: 20px
+	background-color: #fff
+	position: fixed
+	transform: translateY(-160%)
+	width: 100%
+	z-index: 15
+	//top: 34px
+	+mt(.5s)
+
+.headhesive--stick
+	transform: translateY(0)
+	top: 0
+	//top: -25px
+	max-height: 65px
+
+
+
+.header.headhesive.headhesive--stick
+	background-color: rgba(255,255,255,.8)
+	border-bottom: 1px solid $accent-color
+	.menu
+		//padding-top: 0
+		li a.active
+			height: 60px
+		li a
+			&:hover
+				ul.submenu
+					display: block
+					z-index: 1001
+	.is-countdown
+		display: inline-block
+		align-self: center
+		padding: 7px 4px 2px 4px
+		line-height: 1.2
+		border: 1px solid $brand-worldcamp-title!important
+		padding: 0
+		border: none			
+	.hamburger
+		top: 35px
+		right: 10px
+
+//Color Variables
+$white: #fff
+$black: #000
+$blue: #53afd9
+$blue-hover: lighten($blue, 10%)
+
+//Desktop Color Variables
+$header-link-color: $main-color
+$hover-link-color: darken($accent, 10%)
+$header-background-color: #fff
+$hover-background: $blue
+$submenu-background: $blue
+$submenu-background-hover: $main-color
+
+//Mobile Variables
+$mobile-menu-link-color: #fff
+$mobile-hover-link-color: lighten($blue, 20%)
+$hamburger-color: $blue-hover
+$mobile-menu-background-color: $blue
+$mobile-menu-background-hover: $blue-hover
+$mobile-submenu-background-color: $blue-hover
+$mobile-submenu-background-hover: $blue
+$mobile-border: 1px solid rgba(255,255,255,0.2)
+$dimmer-color: rgba(0, 0, 0, 0.7)
+
+// .active
+// 	color: $accent!important
+
+.header 
+	background-color: $header-background-color
+	font-family: $default-font-medium
+	width: 100%
+	display: flex
+	justify-content: space-between
+	border-bottom: 2px solid $accent-color
+	//overflow: hidden
+	@media only screen and (min-width : 768px)
+		padding: 0 3%
+	.logo
+		align-self: center
+		a
+			transition: .5s ease
+			img
+				display: inline-block
+				width: 45px!important
+				height: auto
+			.logo-title
+				padding: 5px 5px 5px 10px
+				@media only screen and (max-width : 980px)		
+					display: none
+				h2
+					display: inline-block
+					font-size: 14px
+					line-height: 16px
+					text-transform: uppercase
+					color: $brand-worldcamp-title
+					font-family: $default-font-regular
+					text-decoration: none
+					@media only screen and (min-width : 1200px)
+						font-size: 17px
+	.menu
+		ul
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				list-style: none
+				transition: .5s ease-in-out
+				&.active
+					a
+						color: $accent
+				a
+					color: $header-link-color
+					text-decoration: none
+					text-transform: uppercase
+					display: block
+					padding: 30px 20px
+					&.active
+						color: $accent
+				ul.submenu 
+					background-color: $submenu-background
+					display: none
+					position: absolute
+					width: 150px
+					box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.05)
+					li 
+						display: block
+						width: 100%
+						transition: .5s ease-in-out
+						a 
+							color: $header-link-color
+							line-height: 25px
+							padding: 10px 27px
+							transition: .5s ease-in-out
+							&:hover
+								color: white
+								background-color: $submenu-background-hover
+				&:hover
+					//background: $hover-background
+					a
+						color: $hover-link-color
+					ul.submenu
+						display: block
+						z-index: 109
+				i.icon-arrow 
+					display: none
+	@media screen and (min-width : 768px)
+		.menu	ul li
+			a
+				padding-top: 20px
+			&:hover
+				ul.submenu
+					top: 79px
+				
+			/*submenu horizontal*/	
+			// ul.submenu 
+			// 	width: 100%
+			// 	top: 80px
+			// 	left: 0
+			// 	text-align: center
+			// 	li
+			// 		display: inline-block
+			// 		width: 150px	
+					
+
+
+				// 	display: flex
+				// 	background-color: $submenu-background
+				// 	li
+				// 		display: block
+				// 		width: 100%
+				// 		height: auto
+				// 		background-color: $submenu-background
+				// 		a
+				// 			height: 100%
+
+
+	@media screen and (max-width : 768px)
+		nav.menu
+			min-height: 55px
+			ul
+				position: fixed
+				bottom: 0
+				left: 0
+				top: 0
+				margin-left: -1500px
+				z-index: 999
+				background-color: $mobile-menu-background-color
+				box-shadow: 5px 0px 10px rgba(0,0,0,0.3)
+			&.active
+				position: fixed
+				left: 0
+				bottom: 0
+				top: 0
+				width: 100%
+				z-index: 999
+				ul
+					margin-left: 0
+					transition: margin-left .25s
+					width: 75vw
+					overflow-y: scroll
+					li
+						display: block
+						border-bottom: $mobile-border
+						&:hover
+							.submenu
+								display: none
+						a
+							color: $mobile-menu-link-color
+							width: 100%
+							&:hover
+								background: $mobile-menu-background-hover
+							&.active
+								color: darken($accent, 25%)!important
+						.flexbox-container
+							display: flex
+							justify-content: space-between
+							a
+								border-right: $mobile-border
+								.fa
+									display: none
+							i.icon-arrow
+								display: inline-block
+								height: 76px
+								width: 76px
+								padding: 30px 29px
+								text-align: center
+								cursor: pointer
+								&:hover
+									background: $mobile-menu-background-hover
+								svg
+									height: 18px
+									width: 15px
+						.submenu
+							max-height: 0
+							overflow: hidden
+							box-shadow: none
+						&.showSubmenu
+							.submenu
+								max-height: 1000px
+								width: 100%
+								position: relative
+								display: block
+								overflow: inherit
+								background-color: $mobile-submenu-background-color
+								.subOption
+									border-top: $mobile-border
+									border-bottom: none
+									a
+										color: $mobile-menu-link-color
+										padding: 15px 40px
+										&:hover
+											color: $mobile-hover-link-color
+											background: $mobile-submenu-background-hover
+							i.icon-arrow
+								transform: rotate(180deg)
+			.hamburger
+				display: inline-block
+				position: absolute
+				//top: 14px
+				top: 12px
+				right: 10px
+				padding: 10px 25px
+				color: $accent-color
+				cursor: pointer
+				z-index: 999
+				span,
+				span:before,
+				span:after 
+					left: 0
+					border-radius: 2px
+					height: 5px
+					width: 38px
+					background: $accent-color
+					position: absolute
+					display: block
+					content: ''
+					transition: all .5s ease-in-out
+					@media only screen and (max-width : 768px)
+						height: 4px
+				span:before 
+					top: -14px
+					@media only screen and (max-width : 768px)
+						top: -10px
+				span:after
+					bottom: -14px
+					@media only screen and (max-width : 768px)
+						bottom: -10px
+				&.active 
+					span
+						background-color: transparent
+					span:before,
+					&.active span:after
+						top: 0
+					span:before
+						transform: rotate(-45deg)
+					span:after
+						transform: rotate(45deg)
+
+.is-countdown
+	display: inline-block
+	margin-top: 10px
+	padding: 10px 5px 3px 5px
+	border: 1px solid $brand-worldcamp-title
+	background-color: rgba(255,255,255,.0)
+	font-family: $titles-font-regular
+	//color: #fff
+	.countdown-row
+		display: block
+		text-align: center
+		.countdown-section
+			display: inline-block
+			width: 45px
+			.countdown-amount
+				display: block
+				color: $brand-worldcamp-title
+				font-family: $titles-font-bold
+				font-size: 18px
+				line-height: .8
+			.countdown-period
+				display: block
+				text-transform: uppercase
+				font-size: 10px
+				font-family: $titles-font-light		
+
+.arrow-wrap
+	margin: 0 auto
+	width: 70px
+	.bg,
+	.button-down
+		position: absolute
+		top: 0
+		left: 0
+		width: 50px
+		height: 50px
+		border-radius: 100%
+	.bg 
+		animation: pulse 1.2s ease infinite
+		background: #fff
+		transition: all .5s ease-in-out		
+	.button-down
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		z-index: 99
+		border: none
+		background: #fff
+		background-size: 18px
+		cursor: pointer
+		outline: none
+		transition: all .5s ease-in-out	
+		opacity: .6
+		&:hover
+			opacity: 1
+			background: lighten($accent-color, 20%)	
+			.fa
+				color: #fff
+		.fa
+			position: absolute
+			color: $accent-color
+			font-size: 17px
+			@keyframes pulse 
+				0%
+					transform: scale(1, 1)
+				50%
+					opacity: 0.3
+				100%
+					transform: scale(1.5)
+					opacity: 0
+
+
+
+.dimmer
+	z-index: 0
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	background-color: $dimmer-color
+	display: none
+	&.active
+		display: block
+
+.no-scrolling
+	overflow: hidden
+	position: fixed
+// .active
+// 	background: red
+
+
+
+
+
+
+
+//social btn
+.social-btn-wrap
+	position: absolute
+	width: 100%
+	bottom: 50px
+	.social-btn
+		display: inline-block
+		padding: 5px 8px
+		height: 50px
+		ul
+			margin-left: 0
+			padding: 2px
+			text-align: center
+			li
+				display: inline-block
+				width: 60px
+				height: 60px
+				line-height: 60px
+				text-align: center
+				list-style-type: none
+				background-color: rgba(17,5,77,.8)
+				border-radius: 10em
+				font-size: em(28px)
+				+mt(.5s)
+				&:hover
+					background-color: $accent-color
+					i
+						color: #fff
+				i
+					color: $accent-color
+					+mt(.5s)
+
+
+
+
+
+.button
+	display: inline-block
+	border: none
+	background-color: $green
+	color: #fff
+	font-size: em(14px)
+	letter-spacing: 2px
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	padding: 14px 25px
+	border-radius: 3px
+	box-shadow: 0 4px 0 darken($green, 5%)
+	transition: all .25s ease
+	margin: 0 auto
+	&:hover, &:focus
+		color: #fff
+		text-decoration: underline
+	&:hover
+		background-color: lighten($green, 10%)
+	&:focus
+		background-color: darken($green, 15%)
+	&:active
+		transform: translateY(4px)
+	&-infogr
+		@extend .button
+		font-size: 14px
+		padding: 5px 12px
+		min-width: 100px
+	&-green
+		@extend .button
+		
+	&-red
+		@extend .button
+		background-color: red
+		box-shadow: 0 4px 0 darken(red, 5%)
+		&:hover
+			background-color: lighten(red, 15%)
+		&:focus
+			background-color: darken(red, 15%)
+		&:hover, &:focus
+			color: #fff			
+	&-darkblue
+		@extend .button
+		background-color: darkblue
+		box-shadow: 0 4px 0 darken(darkblue, 5%)
+		&:hover
+			background-color: lighten(darkblue, 15%)
+		&:focus
+			background-color: darken(darkblue, 15%)
+		&:hover, &:focus
+			color: #fff		
+
+	&-white
+		@extend .button
+		color: $brand-korcamp
+		background-color: white
+		box-shadow: 0 4px 0 darken($brand-korcamp, 5%)
+		&:hover
+			background-color: lighten($brand-korcamp, 15%)
+		&:focus
+			background-color: darken(white, 15%)
+		&:hover, &:focus
+			color: #fff		
+
+.button-blue
+	@extend .button
+	background-color: $brand-blue
+	box-shadow: 0 4px 0 darken($brand-blue, 5%)
+	&:hover
+		background-color: lighten($brand-blue, 15%)
+	&:focus
+		background-color: darken($brand-blue, 15%)
+	&:hover, &:focus
+		color: #fff		
+
+.arrow-wrap
+	text-align: center
+	position: relative
+	z-index: 5
+	top: 60px
+// .arrow-bottom
+// 	display: inline-block
+// 	width: 70px
+// 	height: 61px
+// 	cursor: pointer
+// 	opacity: .7
+// 	transition: all .25s ease
+// 	&:hover
+// 		opacity: 1

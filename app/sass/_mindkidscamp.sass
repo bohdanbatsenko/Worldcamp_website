@@ -1,0 +1,668 @@
+@import "vars.sass"
+
+
+// .header-wrap-mindkidscamp
+// 	display: flex
+// 	flex-direction: column
+// 	margin-top: 0
+// 	position: relative
+// 	width: 100%
+// 	background-image: url(../img/mindkidscamp/mindkids_bg.jpg)  
+// 	background-repeat: no-repeat
+// 	background-size: 100%
+// 	background-position: top center
+// 	padding-bottom: 50px
+// 	@media screen and (max-width: 768px)
+// 		min-height: 200px
+// 	@media screen and (min-width: 768px)
+// 		min-height: 75vh		
+// 	&:before
+// 		content: ''
+// 		display: block
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		width: 155%
+// 		height: 155%
+// 		background-image: url(../img/mindkidscamp/cloud.png)
+// 		background-position: left -320px
+// 		background-repeat: no-repeat
+// 		background-size: contain		
+// 	.flex-center
+// 		margin: auto
+// 		.mindkids-header-composition
+// 			text-align: left
+// 			align-content: center
+// 			position: relative
+// 			@media screen and (max-width : 480px)
+// 				background-color: rgba(#fff,.5)
+// 				margin-top: 0
+// 				padding-top: 0	
+// 			@media screen and (min-width : 768px)
+// 				margin-top: 17%
+// 				padding-top: 11%
+// 				margin-left: 3%			
+// 				h2
+// 					line-height: .8
+// 				h1
+// 					line-height: .6					
+// 			h2
+// 				text-transform: uppercase
+// 				line-height: .8
+// 				color: $yellow-color
+// 				text-shadow: 1px 1px 2px black
+// 				&.date
+// 					text-shadow: none
+// 					color: $headers-color
+// 				@media screen and (max-width : 480px)
+// 					font-size: 1em					
+// 			h1
+// 				text-transform: uppercase
+// 				font-size: 4em
+// 				line-height: .6
+// 				color: $headers-color
+// 				text-shadow: 6px 6px 10px #fff
+// 				@media screen and (max-width : 480px)
+// 					font-size: 1.9em
+// 	.mindkids-logo-img
+// 		img
+// 			display: inline-block
+// 			margin: 0 auto
+// 			width: 450px
+// 			height: auto
+// 			@media screen and (max-width : 480px)
+// 				width: 290px
+
+// 	.arrow-wrap
+// 		.bg 
+// 			background: #fff
+// 		.button-down
+// 			background: lighten($headers-color, 20%)
+// 			&:hover
+// 				background: #fff	
+// 				.fa
+// 					color: $headers-color
+// 			.fa
+// 				color: #fff
+
+
+
+.header-wrap-mindkidscamp
+	margin-top: 0
+	position: relative
+	height: 100%
+	width: 100%
+	padding: 25px 0
+	background: linear-gradient(to top, white 70%, lighten(#00bff3,25%))
+	//filter: multiply(100%)
+	//@media screen and (max-width : 60rem)
+	padding-top: 7.5em
+	@media screen and (min-width : 60rem)
+		background-image: url(../img/mindkidscamp/mindkidscamp_banner3.jpg)	
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center bottom
+		min-height: 520px
+
+	@media screen and (min-width : 1200px)	
+		background-position: center right
+		min-height: 570px
+	@media screen and (min-width : 1320px)	
+		background-position: center right
+		min-height: 600px
+	@media screen and (min-width : 1520px)	
+		background-position: center right
+		min-height: 630px		
+	@media screen and (min-width : 1890px)	
+		min-height: 780px
+		background-position: center right
+	.top-line
+		position: absolute
+		top: 0
+		left: 10%
+		width: 70px
+		height: 130px
+		outline-width: thin
+		outline: 2px solid #fff
+		outline-offset: 2px
+		overflow: hidden
+		border: 2px solid #fff
+		background: #fff
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+	.header-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		.flex-center
+			margin: auto
+			.header-composition
+				text-align: right
+				position: relative
+				img
+					display: inline-block
+					margin: 0 auto
+					padding: 5% 0
+					overflow: hidden
+					@media screen and (max-width : 468px)
+						width: 280px	
+					@media screen and (max-width : 956px)
+						width: 490px												
+					//width: 470px		
+					// @media screen and (min-width : 1790px)
+					// 	width: 800px			
+					// @media screen and (min-width : 70rem)
+					// 	width: 470px
+
+					// @media screen and (max-width : 768px)
+					// 	width: 290px						
+					// @media screen and (max-width : 1200px)
+					// 	width: 400px
+				a.button-red
+					margin-left: 5%
+					padding: 9px 18px
+					font-size: 12px
+	.header-venue
+		padding: 25px 15px
+		text-align: right
+		@media screen and (min-width : 60rem)
+			position: absolute
+			width: 100%
+			bottom: 0
+			right: 0		
+		.mindkids-venue-wrap
+			color: #000
+			&.phones
+				margin-top: 5px
+			.mindkids-venue-icon
+				.fa
+					display: block
+					font-size: 20px
+				img
+					display: inline-block
+					height: auto
+					overflow: hidden
+					&.ministry
+						width: 30px
+					&.map-marker
+						width: 14px
+					&.info
+						margin-top: 4px
+						width: 20px						
+			.mindkids-venue-text
+				p
+					text-transform: uppercase
+					font-size: 13px
+					line-height: 12px
+					text-align: right
+
+
+
+.s-kidscamp-participation
+	background-color: lighten(#000, 97%)
+	background:
+		image: url(../img/mindkidscamp/bg/kids_52.png), url(../img/mindkidscamp/bg/baloon.png), url(../img/mindkidscamp/bg/rainbow.png), url(../img/mindkidscamp/bg/country.png), url(../img/mindkidscamp/bg/diamond-eyes.png)
+		position: bottom left, top left, top right, bottom right, center
+		repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat
+		size: 27%, 15%, 16%, 50%
+		//blend-mode: screen, screen, overlay, multiply
+	@media screen and (max-width : 992px)
+		background-size: 25%, 15%, 16, 50%
+	// background-image: url(../img/mindkidscamp/bg/diamond-eyes.png)
+	// background-repeat: repeat
+	text-align: center
+	.participation-item-wrap
+		margin: 35px 5px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-around
+		@media only screen and (max-width : 40rem)
+			flex-direction: column
+		.participation-item
+			background: #fff
+			flex: 0 1 80%
+			min-height: 300px
+			margin-bottom: 20px
+			padding: 1em
+			padding-top: 2em
+			padding-right: 1.5em
+			outline: 1px solid lighten(grey, 20%)
+			border: 1px solid lighten(grey, 20%)
+			outline-offset: -.8em
+			color: lighten(#000, 20%)
+			position: relative
+			.part-item
+				padding: 1em
+				text-align: center
+				img.kidscamp-logo
+					width: 400px
+					margin: 0 auto
+					margin-bottom: 30px
+				ul
+					text-align: left
+					li
+						list-style-type: none
+						font-size: 16px
+						line-height: 1.2
+						margin-bottom: 20px
+						padding-left: 50px
+						position: relative
+						.img-left
+							display: inline-block
+							position: absolute
+							top: 0
+							left: 0
+							width: 30px
+							//margin-right: 30px
+							height: 0
+							padding-bottom: 30px
+							background-size: contain
+							background-repeat: no-repeat
+							background-position: center center
+							overflow: hidden
+						&.with-support
+							font-family: $default-font-bold
+							text-transform: uppercase
+
+.s-purpose
+	text-align: center
+	background: $accent-color
+	padding: 10px 10px 40px
+	h2
+		color: #fff
+		font-family: $default-font-medium
+		font-size: 33px
+		text-transform: uppercase
+	p
+		color: #fff
+		text-transform: uppercase
+		font-size: 26px
+
+
+.s-objectives
+	text-align: center
+	background: #f0f0f0
+	.participation-item-wrap
+		margin: 35px 5px
+		.participation-item
+			background: #fff
+			margin-bottom: 20px
+			padding: 1em
+			padding-top: 2em
+			padding-right: 1.5em
+			outline: 1px solid lighten(grey, 20%)
+			border: 1px solid lighten(grey, 20%)
+			outline-offset: -.8em
+			color: lighten(#000, 20%)
+			position: relative
+			&:after
+				content: ''
+				display: table
+				clear: both
+			.part-item
+				padding: 1em
+				text-align: center
+				.part-objectives-wrap
+					padding: .3em
+					text-align: left
+					.part-item-img-wrap
+						float: left
+						margin: 0 auto
+						margin-right: 10px
+						background-color: #fff
+						padding: 15px
+						border-radius: 15%
+						width: 90px
+						height: auto
+						img
+							display: block
+							margin: 0
+							width: 95px
+							height: auto
+					h2
+						font-family: $default-font-light
+						margin: 0
+						padding-bottom: 0
+						text-transform: uppercase
+					p
+						text-transform: uppercase				
+				img.kidscamp-logo
+					width: 400px
+					margin: 0 auto
+					margin-bottom: 30px
+				ul.part-objectives
+					display: inline-block
+					width: 48%
+					float: left
+					text-align: left
+					li
+						list-style-type: none
+						font-size: 16px
+						line-height: 1.1
+						margin-bottom: 5px
+						position: relative						
+						padding: 0 0 5px 0
+						&:before
+							content: ''
+							display: block
+							position: absolute
+							width: 0px
+							height: 0px
+							border-style: solid
+							border-color: transparent #a6a6a6
+							border-width: 5px 0 5px 12px
+							top: .3em
+							left: -1.4em
+	.img-wrap
+		margin: 35px 5px
+		display: flex
+		//height: 100%
+		justify-content: center
+		flex-direction: column
+		align-content: center
+		align-items: center
+		//position: relative
+		img
+			@media screen and (min-width : 768px)
+				margin-top: 5%
+
+
+
+.mindkids-program
+	&.grey
+		background: #f0f0f0
+	position: relative
+	.mindkids-content
+		text-align: left
+		&.left
+			text-align: right
+			p
+				float: right
+		.mindkids-title
+			.title-img
+				display: inline-block
+				margin-right: 20px
+				width: 30px
+				height: 30px
+				background-size: contain
+				background-position: center center
+				background-repeat: no-repeat
+			h2
+				display: inline-block
+				font-family: $default-font-regular
+				font-size: 35px
+				text-transform: uppercase
+				span
+					color: $brand-worldcamp-title
+		p
+			width: 80%
+			font-size: 17px
+		.academies-lists
+			width: 100%
+			padding: 0
+			ul
+				float: left
+				list-style-type: none
+				padding: 0
+				&:first-child
+					margin-right: 15px
+				li
+					display: block
+					text-transform: uppercase
+					.fa
+						display: inline-block
+						font-size: 20px
+						color: $brand-worldcamp-title
+						margin-right: 10px
+
+
+	.mindkids-img
+		margin-bottom: 15px
+		text-align: center
+		//text-align: left
+		.program-title
+			margin-bottom: 30px
+		.program-title
+			display: inline-block
+			font-family: $default-font-regular
+			text-transform: uppercase			
+		.program-logo
+			display: inline-block
+			background-position: center center
+			background-size: 90%
+			background-repeat: no-repeat
+			width: 220px
+			height: 0
+			padding-bottom: 20px
+		img
+			width: 80%
+			margin: 0 auto
+
+
+.s-mindkids-gallery
+	padding: 35px 0
+	text-align: center
+	background: $brand-worldcamp-title
+	h1
+		font-family: $default-font-medium
+		text-transform: uppercase
+		color: #fff
+		margin-bottom: 30px
+	.mindkidsgallery-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.photo-mindkids
+			//width: 300px
+			text-align: center
+			box-sizing: border-box
+			position: relative
+			&:before
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background: radial-gradient(ellipse at center, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%)
+				transition: all .3s ease-in-out
+				opacity: 0
+			&:hover
+				&:before
+					opacity: 1
+			@media screen and (min-width: 40em)
+				width: 50%
+			@media screen and (min-width: 60em)
+				width: 33%
+			@media screen and (min-width: 80em)
+				width: 25%
+		.double
+			width: 50%
+
+			&:before
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background: radial-gradient(ellipse at center, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%)
+				transition: all .3s ease-in-out
+				opacity: 0
+			&:hover
+				&:before
+					opacity: 1
+
+.mfp-fade
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.5s ease-in-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transform: scale(0) rotate(90deg)
+			transition: all 0.5s ease-in-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+			transform: scale(1) rotate(0deg)
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+
+
+
+.teams.mindkidscamp-team
+	.team
+		width: 230px
+
+
+
+
+
+.mindkidscamp-intro
+	.mindkidscamp-intro-wrap
+		display: flex
+		flex-direction: row
+		//justify-content: center
+		position: relative
+		@media screen and (max-width : 568px)
+			flex-direction: column
+		.mindkids-left
+			flex: 0 0 50%
+			padding: 1.5em
+			p:first-child:first-letter
+				color: $brand-worldcamp-title
+				float: left
+				font-size: 75px
+				line-height: 60px
+				padding-top: 4px
+				padding-right: 8px
+				padding-left: 3px		
+		.mindkids-right
+			.mindkids-gallery-wrap
+				display: flex
+				flex-wrap: wrap
+				overflow: hidden!important
+				.kids-gallery-item
+					display: block
+					position: relative
+					min-width: 200px
+					//width: 200px
+					height: 0
+					padding-bottom: 40%
+					flex: 1 1 50%
+					margin: 0
+					background-size: cover
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					overflow: hidden
+					transition: all .5s
+					.overlay
+						content: ''
+						position: absolute
+						display: block
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 80%)
+						opacity: 0
+						transition: all .3s
+					&:hover
+						transform: scale(1.15) translateY(13px) translateX(19px)
+						.overlay
+							opacity: .5
+
+
+$colors: $jap_blue, $jap_red, $jap_accent
+@for $i from 1 through length($colors)
+	.s-kids-program .kids-program-wrap li:nth-child(#{length($colors)}n+#{$i})
+		.kids-program-icon
+			background: nth($colors, $i)
+.s-kids-program
+	padding: 40px 0
+	.kids-program-wrap
+		text-align: center
+		h2
+			text-transform: uppercase
+			color: $brand-worldcamp-title
+		ul
+			list-style-type: none
+			li
+				text-align: center
+				display: inline-block
+				vertical-align: top
+				margin: 5px 15px 10px
+				font-family: $titles-font-regular
+				text-transform: uppercase
+				font-size: 18px
+				line-height: 1.2
+				.kids-program-icon
+					display: block
+					width: 70px
+					height: 70px
+					margin: 0 auto
+					margin-bottom: 15px
+					padding: 10px
+					background: #000
+					border-radius: 50%
+					position: relative
+					img
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						width: 40px
+						line-height: 70px
+						margin: 0 auto
+						margin-bottom: 14px
+
+.s-mindkids-venue
+	display: flex
+	justify-content: center
+	position: relative
+	@media screen and (max-width : 768px)
+		flex-direction: column
+	.mindkids-venue-left
+		width: 50%
+		@media screen and (max-width : 768px)
+			width: 100%
+		.owl-dots
+			position: absolute
+			bottom: 0
+			width: 100%
+			text-align: center
+			.owl-dot
+				display: inline-block
+				width: 20px
+				height: 20px 
+				margin: 0 2px
+				border-radius: 10em
+				background-color: #ddd
+				cursor: pointer
+				transition: background-color .25s ease
+				&.active
+					background-color: $brand-worldcamp-title	
+	.mindkids-venue-right
+		padding: 25px 25px 25px 40px
+		width: 50%
+		@media screen and (max-width : 768px)
+			width: 100%		
+		h2
+			font-family: $default-font-regular
+			text-transform: uppercase
+			color: $brand-worldcamp-title
+			font-size: 30px
+		p
+			font-size: 26px
+			text-transform: uppercase
